@@ -7,7 +7,7 @@
 
 ###please copy the following line to the R console
 
-#         source(file='Example.R')
+         source(file='Example.R')
 
 ###please copy the upper line to the R console
 ###make sure 'Example.R','xx-model.R'  and 'adelaide_airport_inputs_sample.csv' are in the working folder
@@ -18,7 +18,7 @@ adelaide_airport=read.table('adelaide_airport_inputs_sample.csv',header=TRUE,sep
 attach(adelaide_airport)
 
 #load clear sky model function
-source(file='6-ASHRAE.R')
+source(file='63-MAC2.R')
 #you can change 'xx-model.R' to test other models
 
 #Run function
@@ -35,3 +35,4 @@ lines(Egh,col="blue",lty=4)
 lines(ghi,col="yellow",lty=5)
 title("comparison",cex.main=.8)
 legend("topleft",inset=.05,c("Ebn","Edh","Egh","ghi"), cex=.5,lty=c(2,3,4,5),col=c("black","red","blue","yellow"))
+
